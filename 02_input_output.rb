@@ -4,15 +4,23 @@
 # Program is run and outputs:
 # "What is your name?"
 
+puts "What is your name?"
+name = gets.chomp
+
 # User inputs: "Tom"
 
 # Program outputs:
 # "Hi Tom! How old are you?"
 
+puts "Hi #{name}! How old are you?"
+age = gets.chomp
+
 # User inputs: 40
 
 # Program outputs:
 # "Wow! You are 40 years old. Congratulations!"
+
+puts "Wow! You are #{age} years old. Congratulations!"
 
 # Beast mode challenge:
 # Ater the above, the program calculates how many years until
@@ -21,3 +29,5 @@
 # "Wow! You are 40 years old. Congratulations!"
 # The program also outputs:
 # "Tom, in 60 years you will be 100 years old!"
+
+puts "#{name}, in #{100 - age.to_i} years you will be 100 years old!"
