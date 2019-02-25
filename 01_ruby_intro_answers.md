@@ -1,7 +1,7 @@
 # Ruby Intro Answer Sheet
 
 ## Check your ruby version
-Your ruby version: 
+Your ruby version: 2.6.0
 
 ## Floats and integers 
 1. 3.0 / 2
