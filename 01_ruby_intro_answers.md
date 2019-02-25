@@ -41,4 +41,4 @@ Your ruby version: 2.6.0
 2. How many minutes are in a decade?
     * Answer: 60 * 8760 * 10 = 5256000
 3. How many seconds old are you?
-    * Answer: 60 * 5256000 * 2.4 = 756864000
+    * Answer: 60 * 5256000 * 2.4 = 756864000.0
