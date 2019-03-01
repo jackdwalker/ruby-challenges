@@ -18,6 +18,20 @@
 
 def largest_number (number_1, number_2)
   # Your code here
+  if !number_1.is_a?(Numeric) or !number_2.is_a?(Numeric)
+    puts "One of these is not an integer, try again with valid input"
+  elsif number_1 > number_2
+    puts "#{number_1}"
+  elsif number_1 < number_2
+    puts "#{number_2}"
+  elsif number_1 = number_2
+    puts "Both numbers input are the same."
+  end
 end
 
 largest_number(100,50)
+largest_number(10,20)
+largest_number("hi", "bye")
+largest_number("hi", 12)
+largest_number(13, "bye")
+largest_number(13.5, 12)
