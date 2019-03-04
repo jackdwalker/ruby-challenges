@@ -25,3 +25,4 @@
 * 05_in_array
 * 06_definition
 * 07_included_once
+* 08_count_letters
