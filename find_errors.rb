@@ -10,17 +10,17 @@
 # returns true if the arr contains the val
 def contains?(arr,val)
     # Initialise the index
-    ind=0
+    ind = 0
+    found = false
+
     # while we haven't found the value and we 
     # still have values to check
     while !found and ind < arr.length do
         if (arr[ind] == val)
-            found=true
-        else
-            return false
+            found = true
         end
         # increment the index
-        ind +1
+        ind += 1
     end
     #return true or false, depending on if the value was found
     return found
