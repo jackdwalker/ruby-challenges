@@ -35,3 +35,4 @@
 * 15_change_letters
 * 16_palindrome
 * 17_combine_hashes
+* 18_find_errors
