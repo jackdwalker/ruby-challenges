@@ -18,3 +18,6 @@ def count_letters (string)
 
   return result # return the hash
 end
+
+puts count_letters("hello")
+puts count_letters("mississippi")

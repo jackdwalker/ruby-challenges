@@ -27,3 +27,23 @@
 # ...etc
 
 # Your code here
+
+def fizz_buzz
+    acc = 0 
+    while acc <= 100
+        if acc == 0
+            puts "#{acc}"
+        elsif acc % 15 == 0
+            puts "FizzBuzz"
+        elsif acc % 3 == 0
+            puts "Fizz"
+        elsif acc % 5 == 0
+            puts "Buzz"
+        else
+            puts "#{acc}"
+        end
+        acc += 1
+    end
+end
+
+fizz_buzz
