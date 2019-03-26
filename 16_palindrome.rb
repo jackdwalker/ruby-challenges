@@ -21,4 +21,14 @@
 
 def palindrome (string)
   # Your code here
+  if string.to_s.downcase == string.to_s.downcase.reverse
+    return true
+  else 
+    return false
+  end
 end
+
+puts palindrome("racecar")
+puts palindrome("hello")
+puts palindrome("110")
+puts palindrome("101")
