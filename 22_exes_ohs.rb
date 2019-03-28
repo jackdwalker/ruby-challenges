@@ -40,14 +40,14 @@ def exes_and_ohs(input)
         if unique_arr_items.size % 2 != 0
             return false
         end
-        index_0_count = input_arr.count(unique_arr_items[0])
-        index_1_count = input_arr.count(unique_arr_items[1])
-        if index_0_count == index_1_count
-            return true
-        else
-            return false
-        end
+        (input_arr.count(unique_arr_items[0]) == input_arr.count(unique_arr_items[1])) ? true : false
     else
         puts "Your input was not a string"
+        return false
     end
 end
+
+# What's the difference? index_acc_count == index_acc+=1_count
+# index_acc_count = 
+
+# index_"#{acc}"_count
