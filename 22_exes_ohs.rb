@@ -37,7 +37,7 @@ def exes_and_ohs(input)
     if input.is_a?(String)
         input_arr = input.downcase.chars
         unique_arr_items = input_arr.uniq
-        if unique_arr_items.size % 2 != 0
+        if unique_arr_items.size != 2
             return false
         end
         (input_arr.count(unique_arr_items[0]) == input_arr.count(unique_arr_items[1])) ? true : false
