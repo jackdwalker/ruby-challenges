@@ -25,8 +25,6 @@ def isogram?(input)
             # If repeating letters return false
             if element_count > 1
                 return false
-            elsif element_count == 1
-                input_arr.delete(char)
             end 
         end
     end

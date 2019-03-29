@@ -53,21 +53,16 @@ def balanced_num(number)
     number_arr = number.digits
     num_length = number.digits.length
     if num_length % 2 == 0
-        forwards = number_arr[0..(num_length/2)].sum 
-        backwards = number_arr.reverse[0..(num_length/2)].sum
-        if forwards == backwards
-            return "Balanced"
-        else
-            return "Not Balanced"
-        end
+        half_length = (num_length / 2) + 1
     else
-        forwards = number_arr[0..((num_length/2)+0.5)].sum
-        backwards = number_arr.reverse[0..((num_length/2)+0.5)].sum
-        if forwards == backwards
-            return "Balanced"
-        else
-            return "Not Balanced"
-        end
+        half_length = (num_length / 2) + 0.5
+    end
+    forwards = number_arr[0..half_length].sum 
+    backwards = number_arr.reverse[0..half_length].sum
+    if forwards == backwards
+        return "Balanced"
+    else
+        return "Not Balanced"
     end
 end
 
