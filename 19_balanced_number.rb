@@ -50,12 +50,12 @@
 def balanced_num(number)
     # Your code goes here
 
-    number_arr = number.digits
+    number_arr = number.digits.reverse
     num_length = number.digits.length
     if num_length % 2 == 0
-        half_length = (num_length / 2) + 1
+        half_length = (num_length / 2) - 2
     else
-        half_length = (num_length / 2) + 0.5
+        half_length = (num_length / 2) - 0.5
     end
     forwards = number_arr[0..half_length].sum 
     backwards = number_arr.reverse[0..half_length].sum
@@ -70,3 +70,4 @@ puts balanced_num(7)
 puts balanced_num(295591) 
 puts balanced_num(959)
 puts balanced_num(27102983)
+puts balanced_num(2712983)
