@@ -49,7 +49,6 @@
 
 def balanced_num(number)
     # Your code goes here
-
     number_arr = number.digits.reverse
     num_length = number.digits.length
     if num_length % 2 == 0
