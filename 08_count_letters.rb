@@ -13,6 +13,8 @@
 def count_letters (string)
   result = {} # You'll need an empty hash to get started!
   # Take string and split into individual characters
+  string_arr = string.chars
+  
   
 
   return result # return the hash

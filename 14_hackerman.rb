@@ -18,7 +18,23 @@
 
 
 # Your code here
+def compare_input()
+    puts "Please enter your first string: "
+    string_1_arr = gets.chomp.downcase.split(" ")
+    puts "Please enter your second string: "
+    string_2_arr = gets.chomp.downcase.split(" ")
 
+    # See if each element in string_1_arr has any matching words in string_2_arr, if true replace |word| with HIDDEN
+    string_1_arr.each do |word|
+        if string_2_arr.include?(word)
+            string_1_arr[string_1_arr.index(word)] = "HIDDEN"
+        end
+    end
+
+    puts string_1_arr.join(" ")
+end
+
+compare_input
 
 
 # Beast mode:
