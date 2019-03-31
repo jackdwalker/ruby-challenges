@@ -56,13 +56,11 @@ def balanced_num(number)
     else
         half_length = (num_length / 2) - 0.5
     end
+
     forwards = number_arr[0..half_length].sum 
     backwards = number_arr.reverse[0..half_length].sum
-    if forwards == backwards
-        return "Balanced"
-    else
-        return "Not Balanced"
-    end
+    # Ternary comparing the forward and backwards num_arr sum
+    forwards == backwards ? "Balanced" : "Not Balanced"
 end
 
 puts balanced_num(7) 
