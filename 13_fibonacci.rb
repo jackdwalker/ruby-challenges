@@ -22,6 +22,11 @@
 # Check your solution by running the tests:
 # ruby tests/13_fibonacci_test.rb
 
-def nthFibonacci (n)
+def fib_r(a, b, n)
+  n == 0 ? a : fib_r(b, a + b, n - 1)
+end
+
+def nthFibonacci(n)
   # Your code here
+  fib_r(0, 1, n)
 end
