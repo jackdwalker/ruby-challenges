@@ -19,8 +19,7 @@
 def max_min(num_string)
     # your code goes here
     num_arr_minmax_out = num_string.split(" ").map!{ |x| x.to_i }.minmax.map!{ |x| x.to_s }.join(" ")
-    p num_arr_minmax_out
 end
 
-max_min("5 2 9 8 23 1")
-max_min("15 4 4 38 -9")
+p max_min("5 2 9 8 23 1")
+p max_min("15 4 4 38 -9")
