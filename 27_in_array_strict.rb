@@ -31,15 +31,15 @@ def in_array_strict?(string, arr, strict)
     # Return for both cases should be a boolean value
     case strict
     when true
-        # arr.each do |element|
-        #     if element == string
-        #         return true
-        #     end
-        # end
-        # return false
+        arr.each do |element|
+            if element == string
+                return true
+            end
+        end
+        return false
 
         # More elegant solution than above
-        arr.include?(string) ? true : false
+        # arr.include?(string) ? true : false
     when false
         # Better to downcase the element variable in the array iteration for better performance.
         # Otherwise you're iterating through the array downcasing everything when it may only be the first
