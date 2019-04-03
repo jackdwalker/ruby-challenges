@@ -18,7 +18,7 @@
 
 def max_min(num_string)
     # your code goes here
-    num_string_minmax_out = num_string.split(" ").map!{ |x| x.to_i }.minmax.map!{ |x| x.to_s }.join(" ")
+    num_string_minmax_out = num_string.split(" ").map!{ |x| x.to_i }.minmax.reverse.map!{ |x| x.to_s }.join(" ")
 end
 
 p max_min("5 2 9 8 23 1")
