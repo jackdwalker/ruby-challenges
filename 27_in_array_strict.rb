@@ -31,21 +31,34 @@ def in_array_strict?(string, arr, strict)
     # Return for both cases should be a boolean value
     case strict
     when true
-        arr.each do |element|
-            if element == string
-                return true
-            end
-        end
-        return false
+        # arr.each do |element|
+        #     if element == string
+        #         return true
+        #     end
+        # end
+        # return false
+
+        # More elegant solution than above
+        arr.include?(string) ? true : false
     when false
-        arr.map!{ |x| x.downcase }
+        # Better to downcase the element variable in the array iteration for better performance.
+        # Otherwise you're iterating through the array downcasing everything when it may only be the first
+        # element that is a match, and you'll have downcased a n-length array
+
+        # arr.map!{ |x| x.downcase }
+
         string.downcase!
         arr.each do |element|
-            if element == string
+            if element.downcase == string
                 return true
             end
         end
         return false
+
+        # Not the include method is more performance heavy here because you need to downcase the entire array 
+        # encountering the same problem as above
+
+        # arr.downcase.include?(string.downcase) ? true : false 
     end
 end
 
