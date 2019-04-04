@@ -27,5 +27,25 @@
 
 def good_walk(walk)
     # your code goes here
+    direction_array = ['n', 's', 'e', 'w']
+    travelled = { n: 0, s: 0, e: 0, w: 0 }
+
+    walk.times do
+	dir = direction_array.sample
+	case dir
+	when 'n'
+	    travelled[:n] += 1
+	when 's'
+	    travelled[:s] += 1
+	when 'e'
+	    travelled[:e] += 1
+	when 'w'
+	    travelled[:w] += 1
+	end
+    end
+
+    (travelled[:e] == travelled[:w]) && (travelled[:n] == travelled[:s]) ? true : false
 end
+
+p good_walk(10)
 
