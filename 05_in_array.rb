@@ -45,4 +45,4 @@ def string_in_array(needle, haystack)
   return false
 end
 
-# # Redo the challenge but try solving it again in a different way.
+# Redo the challenge but try solving it again in a different way.

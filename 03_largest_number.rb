@@ -19,7 +19,12 @@
 def largest_number (number_1, number_2)
   # Your code here
   if !number_1.is_a?(Numeric) or !number_2.is_a?(Numeric)
+    until number1.is_a?(Numeric) and number_2.is_a?(Numeric)
     puts "One of these is not an integer, try again with valid input"
+    puts "Please enter number one: "
+    number1 = gets.chomp
+    puts "Please enter number two: "
+    number2 = gets.chomp
   elsif number_1 > number_2
     puts "#{number_1}"
   elsif number_1 < number_2

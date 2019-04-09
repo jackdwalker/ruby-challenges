@@ -105,3 +105,5 @@ end
 
 p shortest_walk(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"])
 p shortest_walk(["NORTH", "SOUTH", "EAST", "WEST"])
+p shortest_walk(["NORTH", "EAST", "SOUTH"])
+p shortest_walk(["EAST", "SOUTH", "SOUTH", "SOUTH", "WEST", "SOUTH"])
