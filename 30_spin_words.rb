@@ -31,8 +31,8 @@ def spin_words (words)
         end
         index += 1
     end
-    reversed_string = words_arr.join(" ")
-    return reversed_string
+    spun_string = words_arr.join(" ")
+    return spun_string
 
     # Method 3: Try it with characters array to make it more complicated
 end
