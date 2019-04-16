@@ -16,7 +16,6 @@
 # Included test uses rspec
 
 def missing_letter(word)
-    # your code goes here
     word.each_with_index do |x, index|
         return x.next if word[index + 1] != x.next
     end
