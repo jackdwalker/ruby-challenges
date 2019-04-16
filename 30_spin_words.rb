@@ -24,16 +24,18 @@ def spin_words (words)
     # Method 2: Array of words, check word length. If  > 5, flip.
 
     words_arr = words.split(" ")
-    words_arr.each do |word|
+
+    words_arr.map do |word|
         if word.length >= 5
             word.reverse!
         end
     end
+
     return words_arr.join(" ")
 
     # Method 3: Try it with characters array to make it more complicated
 
 
-    
+
 end
 
