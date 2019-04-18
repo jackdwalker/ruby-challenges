@@ -20,10 +20,10 @@ def digital_root(number)
     
     if number < 0
         return -1
-    end
-
-    while number >= 10
+    else 
+        while number >= 10
         number = number.digits.reverse.reduce(:+)
+        end
     end
 
     return number
