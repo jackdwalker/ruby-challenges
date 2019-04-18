@@ -19,23 +19,12 @@ def interesting_number(number)
     # your code goes here
     number_arr = number.digits.reverse
 
-    # Method 1 (won't work with zeroes) > iterate over each element checking for two consecutive greater thans:
-
-    number_arr.each_with_index do |digit, index|
-        if number_arr.length < 3
-            return false
-        elsif (digit > number_arr[index + 1] && digit > number_arr[index + 2]) or (digit < number_arr[index + 1] && digit < number_arr[index + 2])
-            return true
-        end
-        return false
-    end
+    return false unless number_arr.length >= 3
     
-
-    # Method 2 > Case statement with zeroes in condition:
-    # number_arr.each_with_index do |digit, index|
-    #     if number_arr.length < 3
-    #         return false
-    #     end
-        
-        
+    return true if (number_arr.each_cons(2).all? { |a, b| b == a - 1 }) or (number_arr.map!{|x| x == 0 ? x = 10 : x}.each_cons(2).all? { |a, b| b == a + 1 })
+    
+    return false
+    
 end
+
+interesting_number(890)
