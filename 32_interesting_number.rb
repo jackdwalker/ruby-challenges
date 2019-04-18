@@ -26,5 +26,3 @@ def interesting_number(number)
     return false
     
 end
-
-interesting_number(890)
