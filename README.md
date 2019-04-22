@@ -17,7 +17,11 @@
     7. Push to master in your fork:<br/>
      `git push origin master`
 
+<<<<<<< HEAD
 # List of challenge branches
+=======
+## List of challenge branches
+>>>>>>> 3656a16c2fea7068365e58f9c507d2f83edc5107
 * 01_ruby_intro
 * 02_input_output
 * 03_largest_number
@@ -51,3 +55,7 @@
 * 31_missing_letter
 * 32_interesting_number
 * 33_digital_root
+<<<<<<< HEAD
+=======
+* 34_prime_number
+>>>>>>> 3656a16c2fea7068365e58f9c507d2f83edc5107
