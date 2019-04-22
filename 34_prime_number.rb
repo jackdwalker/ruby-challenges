@@ -28,23 +28,23 @@ def prime_number(number)
     # If number is equal to 2, return itself
     if number == 2
         return number
-    end
-
     # Factors of a number will always be less than the floor of its square root.
     # Forcing a loop while number is greater than 2, to enable us to check every number under itself.
-    while number > 2
+    elsif number > 2
+        while number > 2
         # Finding the numbers square root
         num_sqrt = Math.sqrt(number)
         # Within a range of 2 to the number's square root minus 1 (the next closest number underneath the square root)
         # check to see if any integer is a factor of the number. We can do this by checking to see if any number less
         # than the square root returns a modulus of zero. If it does, it must be divisble by that number, making it
         # a composite number.
-        if (2..num_sqrt - 1).detect{|x| number % x == 0}
-            # If number is composite, lower number's value by 1 and begin the process again.
-            number -= 1
-        else
-            # If number has no divisors under it's floored square root, then it must be prime and we return that number.
-            return number
+            if (2..num_sqrt - 1).detect{|x| number % x == 0}
+                # If number is composite, lower number's value by 1 and begin the process again.
+                number -= 1
+            else
+                # If number has no divisors under it's floored square root, then it must be prime and we return that number.
+                return number
+            end
         end
     end
 end
