@@ -48,3 +48,18 @@ def prime_number(number)
         end
     end
 end
+
+# def prime_number(number)
+#     if number == 2
+#         return number
+#     elsif number > 2
+#         while number > 2
+#         num_sqrt = Math.sqrt(number)
+#             if (2..num_sqrt - 1).detect{|x| number % x == 0}
+#                 number -= 1
+#             else
+#                 return number
+#             end
+#         end
+#     end
+# end
