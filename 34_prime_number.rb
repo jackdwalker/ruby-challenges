@@ -23,6 +23,9 @@
 
 # Assume only positive whole numbers >=2 are given as argument.
 
+
+# Commented version
+
 def prime_number(number)
     # Your code goes here
     # If number is equal to 2, return itself
@@ -49,17 +52,20 @@ def prime_number(number)
     end
 end
 
-# def prime_number(number)
-#     if number == 2
-#         return number
-#     elsif number > 2
-#         while number > 2
-#         num_sqrt = Math.sqrt(number)
-#             if (2..num_sqrt - 1).detect{|x| number % x == 0}
-#                 number -= 1
-#             else
-#                 return number
-#             end
-#         end
-#     end
-# end
+
+# Uncommented version
+
+def prime_number(number)
+    if number == 2
+        return number
+    elsif number > 2
+        while number > 2
+        num_sqrt = Math.sqrt(number)
+            if (2..num_sqrt - 1).detect{|x| number % x == 0}
+                number -= 1
+            else
+                return number
+            end
+        end
+    end
+end
