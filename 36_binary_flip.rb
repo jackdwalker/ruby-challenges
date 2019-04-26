@@ -34,8 +34,6 @@ def bin_flip(s)
         s_arr.map! {|digit| digit == 0 ? 1 : 0}
         acc += 1
     end
-    
+        
     return acc
 end
-
-puts bin_flip("1001")
