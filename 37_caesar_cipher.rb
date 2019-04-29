@@ -39,7 +39,6 @@ class CaesarCipher
   end
 
   def encode(string)
-    # your code here
     # Reinitializing these array to be empty in the event of multiple uses of the same object for encryption/decryption
     @string_arr = string.upcase.chars
     array_init
@@ -62,7 +61,6 @@ class CaesarCipher
   end
   
   def decode(string)
-    # your code here
     # Reinitializing these array to be empty in the event of multiple uses of the same object for encryption/decryption
     @string_arr = string.upcase.chars
     array_init
