@@ -70,7 +70,7 @@ class CaesarCipher
       # Adding the shift value to the shift arrays values to get new shifted character value
       @shift_arr[index] = digit - @shift
 
-      # If value <= 0, it will not convert to alphabet. We know -1 should be Y, so we add 26 to get Y's value i.e. 1
+      # If value <= 0, it will not convert to alphabet. We know -1 should be Y, so we add 26 to get Y's value i.e. 25
       if @shift_arr[index] <= 0
         @shift_arr[index] += 26
       end
