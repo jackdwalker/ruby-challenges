@@ -59,7 +59,6 @@ class CaesarCipher
    key_at_value_into_array
 
     return @return_arr.join("")
-
   end
   
   def decode(string)
@@ -83,7 +82,6 @@ class CaesarCipher
     key_at_value_into_array
 
     return @return_arr.join("")
-
   end
 
   # Method for finding the key at a given index within string_arr and returning them to @shift_arr
