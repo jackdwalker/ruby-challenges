@@ -32,12 +32,17 @@ class CaesarCipher
     @return_arr = []
   end
 
+  # Was used in both methods. Made to keep code DRY. See initial comment inside of encode and/or decode method for more info.
+  def array_init
+    @shift_arr = []
+    @return_arr = []
+  end
+
   def encode(string)
     # your code here
     # Reinitializing these array to be empty in the event of multiple uses of the same object for encryption/decryption
     @string_arr = string.upcase.chars
-    @shift_arr = []
-    @return_arr = []
+    array_init
 
     value_at_key_into_array
 
@@ -61,8 +66,7 @@ class CaesarCipher
     # your code here
     # Reinitializing these array to be empty in the event of multiple uses of the same object for encryption/decryption
     @string_arr = string.upcase.chars
-    @shift_arr = []
-    @return_arr = []
+    array_init
 
     value_at_key_into_array
 
