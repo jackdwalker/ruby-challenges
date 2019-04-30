@@ -115,16 +115,3 @@ class Maze
         return death_locations
     end
 end
-
-# maze = Maze.new(maze = [[1,1,1,1,1,1,1],
-#     [1,0,0,0,0,0,3],
-#     [1,0,1,0,1,0,1],
-#     [0,0,1,0,0,0,1],
-#     [1,0,1,0,1,0,1],
-#     [1,0,0,0,0,0,1],
-#     [1,2,1,0,1,0,1]])
-
-# puts maze.start_point
-# puts maze.end_point
-# p maze.death_locations
-# maze.walk(["S","S","N","N","N","E","E","E","E","E"])
